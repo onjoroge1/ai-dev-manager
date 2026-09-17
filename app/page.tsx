@@ -1,18 +1,19 @@
+const stats = [
+  ["Projects", "0"],
+  ["Open tasks", "0"],
+  ["Active agents", "0"],
+  ["Needs attention", "0"],
+];
+
 export default function HomePage() {
   return (
-    <main className="shell">
-      <section className="hero">
-        <span className="eyebrow">AI DEV MANAGER</span>
-        <h1>One control plane for human + AI software delivery.</h1>
-        <p>
-          Track project intent here, reconcile external facts from GitHub and Vercel, and give
-          ChatGPT and Claude a shared source of development state.
-        </p>
-        <div className="statusRow">
-          <span className="statusDot" aria-hidden="true" />
-          <span>Phase 0 bootstrap online</span>
-        </div>
-      </section>
-    </main>
+    <section className="stack">
+      <div className="pageHeading">
+        <div><span className="eyebrow">OVERVIEW</span><h1>Engineering command center</h1></div>
+        <p>Dev Manager will reconcile project intent with GitHub, deployments, CI, and production evidence.</p>
+      </div>
+      <div className="statGrid">{stats.map(([label, value]) => <article className="statCard" key={label}><span>{label}</span><strong>{value}</strong></article>)}</div>
+      <article className="panel emptyState"><span className="eyebrow">GET STARTED</span><h2>Register the first project in PR #3.</h2><p>The application shell is ready. Persistence and project registration are the next stacked changes.</p></article>
+    </section>
   );
 }

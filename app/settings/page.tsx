@@ -1,0 +1,3 @@
+export default function SettingsPage() {
+  return <section className="stack"><div className="pageHeading"><div><span className="eyebrow">SETTINGS</span><h1>Workspace configuration</h1></div><p>Integration health, credentials, and runtime configuration will be managed here.</p></div><article className="panel"><div className="settingRow"><div><strong>Runtime</strong><span>Vercel-ready Next.js application</span></div><span className="badge">Ready</span></div><div className="settingRow"><div><strong>Database</strong><span>Added in PR #2</span></div><span className="badge muted">Pending</span></div><div className="settingRow"><div><strong>MCP</strong><span>Added after project registry</span></div><span className="badge muted">Planned</span></div></article></section>;
+}
