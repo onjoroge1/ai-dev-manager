@@ -1,0 +1,17 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #090b10;
+  color: #f5f7fb;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at top left, #1a2338 0, #090b10 45%); }
+.shell { min-height: 100vh; display: grid; place-items: center; padding: 48px 24px; }
+.hero { width: min(860px, 100%); padding: 48px; border: 1px solid #2a3243; border-radius: 28px; background: rgba(15, 18, 26, 0.82); box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35); }
+.eyebrow { display: inline-block; margin-bottom: 18px; font-size: 12px; font-weight: 800; letter-spacing: 0.18em; color: #9ec5ff; }
+h1 { margin: 0; max-width: 760px; font-size: clamp(42px, 7vw, 78px); line-height: 0.98; letter-spacing: -0.05em; }
+p { max-width: 680px; margin: 28px 0 0; font-size: 18px; line-height: 1.7; color: #b7c0d3; }
+.statusRow { display: flex; align-items: center; gap: 10px; margin-top: 34px; color: #d8e7df; font-weight: 650; }
+.statusDot { width: 10px; height: 10px; border-radius: 999px; background: #68d391; box-shadow: 0 0 18px rgba(104, 211, 145, 0.7); }
+@media (max-width: 640px) { .hero { padding: 32px 24px; } }
